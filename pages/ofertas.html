@@ -4,75 +4,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
     <title>BullShoes Ofertas</title>
 </head>
 <body>
     <header>
         <h1>BullShoes</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="ofertas.html">Ofertas</a></li>
-                <li><a href="qsomos.html">¿Quienes somos?</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/ofertas.html">Ofertas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/qsomos.html">¿Quienes somos?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
+    <!-- Productos en oferta -->
     <main class="ofertas">
-        <table>
-            <tr>
-                <td><img src="../img/zap1.jpg" alt="zapatilla 1" class="prods"></td>
-                <td>
-                    <h2>ZAPATILLAS VAGABOND</h2>
-                    <p>Material y cuidados <br>
-                        Superior: Piel genuina - Piel plena flor , Piel genuina - Gamuza , Tela - Tela <br>
-                        Único: material de alta calidad <br>
-                        Plantilla: cuero , textil <br>
-                        Adentro: textil</p>
-                        <h3>$14.900</h3>
-                        <button onclick="realizarCompra">Comprar</button>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="../img/zap2.jpg" alt="zapatilla 2"></td>
-                <td>
-                    <h2>ZAPATILLAS VAGABOND</h2>
-                    <p>Material y cuidados <br>
-                        Superior: Tela - Tela<br>
-                        Contiene partes no textiles de origen animal: No<br>
-                        Único: material de alta calidad<br>
-                        Tecnologías: Eva , CALZADO HECHO EN PARTE CON MATERIALES RECICLADOS<br>
-                        Plantilla: textil<br>
-                        Adentro: textil<br>
-                        </p>
-                        <h3>$10.500</h3>
-                        <button onclick="realizarCompra">Comprar</button>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="../img/zap4.jpg" alt="zapatilla 3"></td>
-                <td>
-                    <h2>ZAPATILLAS FLASHBACK</h2>
-                    <p>Material y cuidados <br>
-                        Superior: Tela - Tela<br>
-                        Contiene partes no textiles de origen animal: No<br>
-                        Único: material de alta calidad<br>
-                        Tecnologías: Eva , CALZADO HECHO EN PARTE CON MATERIALES RECICLADOS<br>
-                        Plantilla: textil<br>
-                        Adentro: textil<br>
-                    </p>
-                    <h3>$20.700</h3>
-                    <button onclick="realizarCompra">Comprar</button>
-                </td>
-            </tr>
-        </table>
-        <div class="off">
-            <img src="../img/off.jpg" alt="15% off">
-            <img src="../img/off2.jpg" alt="off">
-        </div>
+        <div class="card text-bg-dark" style=" width: 100%; height: 100%;">
+            <img src="../img/zap1.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Oferta 1</h5>
+              <p class="card-text">Descripción: <br> ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nihil, ratione nisi sit quidem, est distinctio, sapiente iste veritatis magnam maiores repellat fugit temporibus ipsam. Culpa perferendis quas ipsum pariatur!</p>
+              <p class="card-text"><small>Para más info contactese con operador</small></p>
+            </div>
+          </div>
+          <div class="card text-bg-dark" style=" width: 100%; height: 100%;">
+            <img src="../img/zap1.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Oferta 2</h5>
+              <p class="card-text">Descripción: <br> ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nihil, ratione nisi sit quidem, est distinctio, sapiente iste veritatis magnam maiores repellat fugit temporibus ipsam. Culpa perferendis quas ipsum pariatur!</p>
+              <p class="card-text"><small>Para más info contactese con operador</small></p>
+            </div>
+          </div>
+          <div class="card text-bg-dark" style=" width: 100%; height: 100%;;">
+            <img src="../img/zap1.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Oferta 3</h5>
+              <p class="card-text">Descripción: <br> ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nihil, ratione nisi sit quidem, est distinctio, sapiente iste veritatis magnam maiores repellat fugit temporibus ipsam. Culpa perferendis quas ipsum pariatur!</p>
+              <p class="card-text"><small>Para más info contactese con operador</small></p>
+            </div>
+          </div>
+          <div class="card text-bg-dark" style=" width: 100%; height: 100%;">
+            <img src="../img/zap1.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Oferta 4</h5>
+              <p class="card-text">Descripción: <br> ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nihil, ratione nisi sit quidem, est distinctio, sapiente iste veritatis magnam maiores repellat fugit temporibus ipsam. Culpa perferendis quas ipsum pariatur!</p>
+              <p class="card-text"><small>Para más info contactese con operador</small></p>
+            </div>
+          </div>
     </main>
+    <!-- Algunos otros productos -->
+    <div>
+    <h5 class="title-nov">NOVEDADES</h5>
+      <div class="nov">
+        <div class="reloj1"><img src="../img/reloj.jpg" alt="Reloj en rebaja"></div>
+        <div class="reloj1"><img src="../img/reloj.jpg" alt="Reloj en rebaja"></div>
+        <div class="reloj1"><img src="../img/reloj.jpg" alt="Reloj en rebaja"></div>
+        <div class="reloj1"><img src="../img/reloj.jpg" alt="Reloj en rebaja"></div>
+        <div class="reloj1"><img src="../img/reloj.jpg" alt="Reloj en rebaja"></div>
+      </div>
+    </div>
+    <div class="tabla-prod">
+      <table>
+        <tr>
+          <td><h6>Zapatillas Hombre</h6></td>
+          <td><h6>Zapatillas Mujer</h6></td>
+          <td><h6>Ropa y Accesorios</h6></td>
+          <td><h6>Envios</h6></td>
+        </tr>
+        <tr>
+          <td>Novedades de Hombres</td>
+          <td>Novedades de Mujeres</td>
+          <td>Accesorios</td>
+          <td>Envios</td>
+        </tr>
+        <tr>
+          <td>Sneakers para vestir</td>
+          <td>Zapatillas para vestir</td>
+          <td>Mochilas</td>
+          <td>Devoluciones</td>
+        </tr>
+        <tr>
+          <td>Running Style</td>
+          <td>Running Style</td>
+          <td>Pantalones</td>
+          <td>Como Comprar</td>
+        </tr>
+        <tr>
+          <td>Retro Style</td>
+          <td>Retro Girl</td>
+          <td>Medias</td>
+          <td>Tallas</td>
+        </tr>
+      </table>
+    </div>
     <footer>
         <div class="pie">
             <table>

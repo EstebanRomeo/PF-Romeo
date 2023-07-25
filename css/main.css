@@ -75,7 +75,8 @@ main .info{
   padding: 30px;
   margin-top: 50px;
 }
-/* Productos en oferta - ofertas*/
+
+/* Productos en oferta - ofertas
 .prods{
   height: 700px;
   width: 700px;
@@ -83,9 +84,31 @@ main .info{
   th, td {
     padding: 8px;
   }
+  */
+  .nov{
+    display: flex;
+    flex-direction: row;
+  }
+  .nov .reloj1 img{
+    height: 100%;
+    width: 100%;
+  }
+  .title-nov{
+    text-align: center;
+    background-color: wheat;
+  }
+  .tabla-prod table{
+    width: 70%;
+    margin: 100px;
+  }
   /* Pie de pagina */
   .pie{
     background-color: wheat;
+  }
+  .ofertas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
   /* Imagen de historia de la empresa - Qsomos */
   .imgEmz img{
@@ -133,6 +156,7 @@ iframe{
 .marH4{
   grid-column: span 2;
 }
+
 }
 @media screen and (min-width:1200px) {
   .marca{
@@ -147,8 +171,8 @@ iframe{
 /*Estilos de ofertas*/
 .ofertas{
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 .ofertas img{
   max-width: 100%;
@@ -168,10 +192,12 @@ main .qSomos{
 .menuProductos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
 }
-
+.card{
+  height: 700px;
+}
 .producto {
   text-align: center;
 }
