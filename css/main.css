@@ -1,208 +1,68 @@
-/* Acomoda y da forma al menu */
-header nav ul{
-  list-style: none;
-  display: flex;
-  gap:1.5rem;
-}
-header{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 40px;
-}
-/* Acomoda las zapatillas pricipales del INDEX - index*/
-.zapPric{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.slader{
-  height: 80vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 30%);
-    gap: 1rem;
-}
-/* Le da forma a la informacion pricipal de la noticia - index*/
-main{
-  max-width: 100%; 
-  padding: 20px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-main .info{
-  text-align: center;
-}
-/* Tamaño de la imagen pricipal de la noticia - index*/
-.imgHis{
-  max-width: 100%; /*Asegura que no exceda el ancho del contenedor*/
-  height: auto;
-}
-/* Da forma a las marcas colaboradoras - index*/
-.marcas{
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  width: 200px;
-  height: 200px;
-  padding-bottom: 0px;
-  padding-top: 50px;
-  padding-left: 100px;
-}
-.marca{
-  text-align: center;
-  padding-top: 200px;
-}
-.info{
-  display: inline-block;
-  align-items: center;
-  margin-top: 50px;
-}
-/* Diseño para promocionar emprendimiento - index*/
-.prom{
-  text-align: center;
-  background-color: rgb(241, 198, 86);
-  display: inline-block;
-  padding: 10px;
-}
-.promInfo{
-  max-width: 100%;
-  height: auto;
-  text-align: center;
-  background-color: rgb(230, 190, 88);
-  padding: 30px;
-  margin-top: 50px;
+.carousel-item .col {
+  padding: 0 5px;
 }
 
-/* Productos en oferta - ofertas
-.prods{
-  height: 700px;
-  width: 700px;
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item>div {
+    display: none !important;
   }
-  th, td {
-    padding: 8px;
+  .carousel-inner .carousel-item>div:first-child {
+    display: block !important;
   }
-  */
-  .nov{
-    display: flex;
-    flex-direction: row;
-  }
-  .nov .reloj1 img{
-    height: 100%;
-    width: 100%;
-  }
-  .title-nov{
-    text-align: center;
-    background-color: wheat;
-  }
-  .tabla-prod table{
-    width: 70%;
-    margin: 100px;
-  }
-  /* Pie de pagina */
-  .pie{
-    background-color: wheat;
-  }
-  .ofertas{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-  /* Imagen de historia de la empresa - Qsomos */
-  .imgEmz img{
-    width: 600px;
-    height: 400px;
-  }
-  .emp{
-    display: flex;
-    width: 1000px;
-    height: auto;
-    align-items: center;
-    margin: 200px;
-    background-color:  rgb(230, 190, 88);
-    padding: 30px;
-  }
-  /* Imagenes de profecionales - Qsomos */
-  .prof img{
-    width: 450px;
-    height: 200px;
-  }
-  .consul{
-    width: auto;
-    height: auto;
-    background-color:  rgb(230, 190, 88);
-    text-align: center;
-    padding: 60px;
-    margin-bottom: 200px;
-  }
-iframe{
-    height: 450px;
-    width: 100%;
 }
-@media screen and (min-width:600px) {
-  .slader{
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 30%);
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex !important;
+}
+
+
+/* medium and up screens */
+
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(20%) !important;
+  }
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-20%) !important;
+  }
+  /*  half slides CSS */
+  .carousel-inner:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 85%;
+    left: 0;
+    content: "";
+    display: block;
+    z-index: 2;
+  }
+  .carousel-inner:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 85%;
+    content: "";
+    display: block;
+    z-index: 2;
+  }
+  .carousel-control-prev {
+    left: 12% !important;
+  }
+  .carousel-control-next {
+    right: 12% !important;
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0) !important;
+}
+
+.embed-responsive-100x400px{
   padding-bottom: 400px;
-}
-  .marca{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 0.5fr);
-  gap: 20px;
-}
-.marH4{
-  grid-column: span 2;
-}
-
-}
-@media screen and (min-width:1200px) {
-  .marca{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-  .marH4{
-    grid-column: span 3;
-  }
-}
-/*Estilos de ofertas*/
-.ofertas{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-.ofertas img{
-  max-width: 100%;
-  height: auto;
-}
-/*Estilos Qsomos*/
-.qSomos{
- display: grid;
- grid-template-columns: repeat(1, 1fr);
- grid-template-rows: repeat(1, 1fr);
- width: 100%;
-}
-main .qSomos{
-  text-align: center;
-}
-/*Estilos Productos*/
-.menuProductos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 10px;
-}
-.card{
-  height: 700px;
-}
-.producto {
-  text-align: center;
-}
-
-.producto img {
-  width: 100%;
-  height: auto;
 }
